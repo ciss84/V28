@@ -26,11 +26,11 @@ function done()
         read_ptr_at(0);
     }
     else
-        alert("Payload is not loaded! Reboot your PS4 and try again.");
+        alert("Jailbreak failed! Reboot your PS4 and try again.");
 }
 window.midExploit = function()
 {
-    preloadScripts([kex.js', 'PAYLOADS/FTP.js', 'PAYLOADS/c-code.js'], go);
+    preloadScripts(['kex.js', 'PAYLOADS/FTP.js', 'PAYLOADS/c-code.js'], go);
 }
 window.postExploit = function()
 {
@@ -39,7 +39,7 @@ window.postExploit = function()
     {
         eval.call(window, scriptCode);
         done();
-    }, 100);
+    }, 150);
 };
 </script>
 <script src="webkit.js"></script>
